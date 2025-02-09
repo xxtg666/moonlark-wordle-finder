@@ -88,6 +88,7 @@ def find_words():
             result.append(word)
     word_list.clear()
     word_list.addItems(result)
+    button_find.setText(f"查找 ({len(result)})")
 
 button_find.clicked.connect(find_words)
 
